@@ -1,0 +1,30 @@
+to login to AWS CLI
+aws.amazon.com/cli
+The link will take you to the page that reads AWS Command Line Interface
+When you are on the page, on the right pane, you see options to download the CLI for 32 or 64 bit (windows or Linux)
+Click on download under windows since we will use the CLI on windows OS. You cannot install the CLI twice.
+CLI has to be configured for the user to access the AWS services
+CLI has to be configured separately for every user because it has separate and unique access keys for every user.
+Configure CLI now by starting the command prompt, in the command prompt
+>aws configure --profile classadmin
+AWS Access Key ID[None]: paste the access here from xl sheet
+AWS Secret Access Key[None]:paste the secret access key here from xl sheet
+Default region name[None]:
+If you aren't aware of the region name, u may go through this link docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region
+The above link is gonna help with the codes of all the regions so u can pick the region and paste it to the CLI
+Default output format[None]:enter(no value here)
+
+Now, the CLI is configured for a user and the user can access the AWS from CLI
+Test the configured CLI by querying a service which u want to access
+>aws s3 ls --profile classadmin1
+The above command lists the details related to the s3 service that is mentioned in the command.
+
+Alternatively, check the details of the same service with management console.
+login by the username and search for the service s3 and the same objects will reflect under the service.
+The only difference is to remember the commands if the services are being accessed by CLI.
+
+
+
+
+ 
+
